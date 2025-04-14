@@ -1,2 +1,41 @@
-# doordash_deliverydata_analysis
-A data analytics project simulating real-world food delivery data analysis using pandas, SQL, and visualization tools.
+DoorDash 外卖订单数据分析项目
+
+项目简介
+
+本项目基于 DoorDash 的订单数据，从多角度出发，探讨了城市订单量、配送效率、用户评分、商家表现以及用户转化率等核心问题。项目使用 Python（Pandas、NumPy、Seaborn、Matplotlib）结合 SQLite 进行数据分析与建模，旨在输出具备商业价值的洞察，辅助平台优化运营策略。
+
+---
+
+关键发现
+
+ 1. 各城市订单量分析
+- 订单量最高的城市依次为：布鲁克林、芝加哥、纽约。
+- 外卖需求高度集中于大城市，建议平台优先在此区域优化资源配置（如增加 Dasher 数量）。
+
+ 2. 配送时长对比
+- 平均配送时间最长的为布鲁克林、纽约、芝加哥。
+- 然而，洛杉矶作为大城市，配送效率却非常高，值得进一步研究其运营模型并借鉴推广。
+
+ 3. 商家评分与订单量
+- 点单量超过20的商家中，评分最高的是 7-Eleven，最低的是 Wendy’s。
+- 麦当劳订单最多，其次为 Walgreens 与 Burger King。
+- 建议平台加强与评分偏低的大型快餐品牌合作，提升整体顾客体验。
+
+ 4. 配送速度是否影响评分？
+- 回归分析显示评分与配送速度的相关性极弱，甚至略微负相关。
+- 表明用户更看重餐品质量、服务态度等非配送速度因素。
+
+ 5. 用户转化率 & 漏斗分析
+- 搭建了 SQL 与 Pandas 双版本漏斗分析：浏览 → 下单 → 留下好评。
+- 有助于评估用户流失环节，并提供优化路径。
+
+---
+技术栈
+
+- Python：Pandas, NumPy, Seaborn, Matplotlib
+- SQL：SQLite
+- Jupyter Notebook：数据分析与可视化
+
+---
+文件结构
+
